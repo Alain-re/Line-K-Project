@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LineK MIS Login</title>
+  <link rel="stylesheet" href="./LineK.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <h1>LineK</h1>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="LineK.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Services.html">Services</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li class="current-page"><a href="MIS.html">MIS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main MIS Login Content -->
+  <main class="site-main">
+    <div class="container">
+      <h2>Staff Login - MIS Portal</h2>
+      <p>Please log in to access the LineK Management Information System.</p>
+
+      <div class="login-card">
+        <form action="/login" method="post" class="login-form">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+           
+
+          <button type="submit" class="login-button">Log In</button>
+          <a href="#" class="forgot-password">Forgot your password?</a>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Follow Our Social Networks</p>
+      <ul>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://twitter.com">Twitter</a></li>
+        <li><a href="https://instagram.com">Instagram</a></li>
+      </ul>
+      <p>&copy; LineK 2025.</p>
+    </div>
+  </footer>
+
+  <!-- Password Toggle Script -->
+  <script>
+    const toggle = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+
+    toggle.addEventListener('change', function () {
+      password.type = this.checked ? 'text' : 'password';
+    });
+  </script>
+</body>
+</html>
